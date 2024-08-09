@@ -8,7 +8,7 @@ import { Spacing } from "./_components/Spacing";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="relative w-full">
       <Header />
       <Spacing size="md" />
       <Hero />

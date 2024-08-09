@@ -22,7 +22,7 @@ export const Hero = () => (
         . Living in{" "}
         <Code className="inline-flex items-center gap-1">
           <img
-            src={"/Flag_of_Cameroon.png"}
+            src={"/flag_of_Cameroon.png"}
             alt="spreeloop logo"
             className="size-4"
           />
