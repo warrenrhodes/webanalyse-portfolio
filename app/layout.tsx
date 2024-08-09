@@ -23,6 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/me_avatar.png" sizes="32x32" />
+        <link rel="icon" href="/me_avatar.png" type="image/svg+xml" />
+      </head>
       <body
         className={cn(
           GeistSans.variable,

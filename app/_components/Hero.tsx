@@ -8,10 +8,10 @@ export const Hero = () => (
     <div className="flex flex-[2] flex-col gap-2">
       <h2 className="font-caption text-5xl text-primary">Warren Rhodes</h2>
       <h3 className="font-caption text-3xl">Software Developer</h3>
-      <p className="text-base text-muted-foreground">
-        I love creating content. currently working at{" "}
-        <Link href={"https://spreeloop.com"}>
-          <Code className="inline-flex items-center gap-1">
+      <span>
+      I love creating content. currently working at{" "}
+      <Link href={"https://spreeloop.com"}>
+          <Code>
             <Image
               src={"/spreeloop_logo.png"}
               alt="spreeloop logo"
@@ -20,9 +20,8 @@ export const Hero = () => (
             />
             Spreeloop
           </Code>
-        </Link>
-        . Living in{" "}
-        <Code className="inline-flex items-center gap-1">
+        </Link>.
+        Living i <Code className="inline-flex items-center gap-1">
           <Image
             src={"/Flag_of_Cameroon.png"}
             alt="spreeloop logo"
@@ -31,7 +30,9 @@ export const Hero = () => (
           />
           Cameroun
         </Code>
-      </p>
+              
+            </span>
+     
     </div>
     <div className="ml-auto flex-1 max-md:m-auto">
       <img
