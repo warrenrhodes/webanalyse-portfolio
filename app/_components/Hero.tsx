@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Code } from "./Code";
 import { Section } from "./Section";
@@ -8,31 +7,28 @@ export const Hero = () => (
     <div className="flex flex-[2] flex-col gap-2">
       <h2 className="font-caption text-5xl text-primary">Warren Rhodes</h2>
       <h3 className="font-caption text-3xl">Software Developer</h3>
-      <span>
-      I love creating content. currently working at{" "}
-      <Link href={"https://spreeloop.com"}>
-          <Code>
-            <Image
+      <p className="text-base text-muted-foreground">
+        I love creating content. currently working at{" "}
+        <Link href={"https://spreeloop.com"}>
+          <Code className="inline-flex items-center gap-1">
+            <img
               src={"/spreeloop_logo.png"}
               alt="spreeloop logo"
-              width={15}
-              height={15}
+              className="size-4"
             />
             Spreeloop
           </Code>
-        </Link>.
-        Living i <Code className="inline-flex items-center gap-1">
-          <Image
+        </Link>
+        . Living in{" "}
+        <Code className="inline-flex items-center gap-1">
+          <img
             src={"/Flag_of_Cameroon.png"}
             alt="spreeloop logo"
-            width={15}
-            height={15}
+            className="size-4"
           />
           Cameroun
         </Code>
-              
-            </span>
-     
+      </p>
     </div>
     <div className="ml-auto flex-1 max-md:m-auto">
       <img
