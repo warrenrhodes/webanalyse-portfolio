@@ -140,11 +140,12 @@ const ProjectsCard = ({ project }: { project: Project[] }) => {
   return (
     <div className="m-auto space-y-3 p-3">
       <p className="text-sm text-muted-foreground">Side, fun projects</p>
-      <div className="flex flex-col items-start gap-3">
+      <div className="group flex flex-col items-start">
         {project.map((item) => (
           <Link
             href={item.link ?? "/"}
-            className="group inline-flex w-full items-center gap-3 p-1 transition-colors hover:bg-primary/10"
+            className="m-2 inline-flex w-full items-center gap-3 p-2 transition duration-300 hover:!scale-100 hover:rounded-md
+            hover:bg-primary/10 hover:!blur-none  group-hover:scale-95 group-hover:blur-[1px]"
             key={item.title}
           >
             <div
@@ -161,9 +162,9 @@ const ProjectsCard = ({ project }: { project: Project[] }) => {
                   <span
                     className={cn(
                       {
-                        "border-green-400 bg-green-600/15 text-green-400":
+                        "border-green-400 bg-green-600/15 text-green-400 hover:bg-green-400/15":
                           item.role === "Owner",
-                        "border-blue-400 bg-blue-600/15 text-blue-400":
+                        "border-blue-400 bg-blue-600/15 text-blue-400 hover:bg-blue-600/15":
                           item.role === "Collaborator",
                       },
                       "border p-1 rounded-full text-[10px] font-medium ml-2"
@@ -182,9 +183,9 @@ const ProjectsCard = ({ project }: { project: Project[] }) => {
       </div>
       <Link
         href={"https://github.com/warrenrhodes"}
-        className="inline-flex w-full items-center justify-end gap-2 text-sm text-primary"
+        className="group inline-flex w-full items-center justify-end gap-2 text-sm text-primary"
       >
-        View more <ArrowRight />
+        View more <ArrowRight className=" group-hover:animate-slide-right" />
       </Link>
     </div>
   );
@@ -199,11 +200,12 @@ const WorkingProject = ({ project }: { project: Project[] }) => {
         <p className="text-sm text-muted-foreground">Works</p>
       </div>
 
-      <div className="flex flex-col items-start gap-3">
+      <div className="group flex flex-col items-start">
         {project.map((item) => (
           <Link
             href={item.link ?? "/"}
-            className="group inline-flex w-full items-start gap-2 p-1 hover:bg-primary/10"
+            className=" inline-flex w-full items-start gap-2 p-3 transition duration-300 hover:!scale-100 hover:rounded-md hover:bg-primary/10
+             hover:!blur-none  group-hover:scale-95 group-hover:blur-[1px]"
             key={item.title}
           >
             <div
