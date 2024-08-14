@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 import * as tailwindcssAnimate from "tailwindcss-animate";
 
 const config = {
-  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -77,12 +76,17 @@ const config = {
           "0%": { transform: "translateX(-10px)", opacity: "0" },
           "100%": { transform: "translateX(0)", opacity: "1" },
         },
+        "pulse-opacity": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "spin-slow": "spin 11s linear infinite",
         "slide-right": "slide-right 0.6s ease-out",
+        "pulse-opacity": "pulse-opacity 2s ease-in-out",
       },
     },
   },

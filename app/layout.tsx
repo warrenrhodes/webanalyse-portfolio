@@ -4,6 +4,8 @@ import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import { Fira_Sans } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "./provider/localization";
+import { ThemeProvider } from "./provider/theme";
 
 const FiraSans = Fira_Sans({
   weight: "500",
@@ -22,21 +24,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/me_avatar.png" sizes="32x32" />
         <link rel="icon" href="/me_avatar.png" type="image/svg+xml" />
       </head>
-      <body
-        className={cn(
-          GeistSans.variable,
-          GeistMono.variable,
-          FiraSans.variable,
-          "font-sans"
-        )}
-      >
-        {children}
-      </body>
+      <LanguageProvider>
+        <body
+          className={cn(
+            GeistSans.variable,
+            GeistMono.variable,
+            FiraSans.variable,
+            "font-sans"
+          )}
+        >
+          <ThemeProvider>{children}</ThemeProvider>
+        </body>
+      </LanguageProvider>
     </html>
   );
 }

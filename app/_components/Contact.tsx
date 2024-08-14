@@ -1,14 +1,18 @@
+"use client";
+import { useLocalization } from "@/lib/hooks/useLocalization";
 import { ContactCart } from "./_ContactCart";
 import { GmailIcon } from "./icons/GmailIcon";
 import { LinkInIcon } from "./icons/LinkInIcon";
 import { Section } from "./Section";
 
 export const Contact = () => {
+  const { localization } = useLocalization();
+
   return (
     <Section className="flex flex-col gap-5">
-      <p className="text-sm text-muted-foreground">Contact me</p>
+      <p className="text-sm text-muted-foreground">{localization.contactMe}</p>
       <p className="text-2xl font-semibold tracking-tight">
-        I will be happy to work with you.
+        {localization.contactMeDescription}
       </p>
       <div className="flex items-center gap-5 max-md:inline-block max-md:space-y-3">
         <ContactCart

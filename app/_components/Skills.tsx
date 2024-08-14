@@ -1,3 +1,6 @@
+"use client";
+
+import { useLocalization } from "@/lib/hooks/useLocalization";
 import Link from "next/link";
 import { Code } from "./Code";
 import { FlutterIcon } from "./icons/FlutterIcon";
@@ -6,23 +9,24 @@ import { TailwindIcon } from "./icons/TailwindIcon";
 import { Section } from "./Section";
 
 export const Skills = () => {
+  const { localization } = useLocalization();
+
   return (
     <Section className="flex flex-col gap-5">
-      <p className="text-sm text-muted-foreground">Skills</p>
+      <p className="text-sm text-muted-foreground">{localization.skills}</p>
       <p className="text-2xl font-semibold tracking-tight">
-        I love working on...
+        {localization.iLoveWorkOn}...
       </p>
       <div className="space-y-8 pt-5 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
         <SectionGrid
           title="Flutter"
           description={
             <span>
-              My main framework is{" "}
+              {localization.flutterDescription1}{" "}
               <Link href={"https://flutter.dev"}>
                 <Code>Flutter</Code> .
               </Link>
-              is the best hybrid framework to create the app multi-platform with
-              only one code.
+              {localization.flutterDescription2}
             </span>
           }
           icon={<FlutterIcon className="size-10 object-contain" />}
@@ -31,12 +35,13 @@ export const Skills = () => {
           title="React"
           description={
             <span>
-              I can create <u>smooth</u> application base on your convenance. i
-              also use{" "}
+              {localization.reactDescription1}
+              <u>{localization.reactDescription2}</u>{" "}
+              {localization.reactDescription3}
               <Link href={"https://nextjs.org/"}>
                 <Code>Next.js</Code>
               </Link>
-              as a backend and frontend framework
+              {localization.reactDescription4}
             </span>
           }
           icon={<ReactIcon className="size-10 animate-spin-slow" />}
@@ -45,7 +50,9 @@ export const Skills = () => {
           title="Tailwind"
           description={
             <span>
-              I can create <u>beautiful</u> application seconds using{" "}
+              {localization.reactDescription1}{" "}
+              <u>{localization.tailwindDescription2}</u>
+              {localization.tailwindDescription3}
               <Code>Tailwindcss</Code>.
             </span>
           }
