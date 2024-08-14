@@ -26,20 +26,20 @@ export const LanguageProvider = (props: PropsWithChildren) => {
 
   const setLocale = useCallback((localToSet: Locale) => {
     setSaveLocale(localToSet);
-    document.documentElement.setAttribute("locale", localToSet);
-    window.localStorage.setItem("locale", localToSet);
+    document.documentElement.lang = localToSet;
+    window.localStorage.setItem("lang", localToSet);
   }, []);
 
   useEffect(() => {
     let localToSet: Locale = localization.defaultLocale;
-    const preference = window.localStorage.getItem("locale");
+    const preference = window.localStorage.getItem("lang");
 
     if (preference && preference !== "null" && localIsValid(preference)) {
       localToSet = preference as Locale;
     }
 
-    document.documentElement.setAttribute("locale", localToSet);
-    window.localStorage.setItem("locale", localToSet);
+    document.documentElement.lang = localToSet;
+    window.localStorage.setItem("lang", localToSet);
 
     setSaveLocale(localToSet);
   }, []);

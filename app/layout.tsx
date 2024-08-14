@@ -30,16 +30,18 @@ export default function RootLayout({
         <link rel="icon" href="/me_avatar.png" type="image/svg+xml" />
       </head>
       <LanguageProvider>
-        <body
-          className={cn(
-            GeistSans.variable,
-            GeistMono.variable,
-            FiraSans.variable,
-            "font-sans"
-          )}
-        >
-          <ThemeProvider>{children}</ThemeProvider>
-        </body>
+        <ThemeProvider>
+          <body
+            className={cn(
+              GeistSans.variable,
+              GeistMono.variable,
+              FiraSans.variable,
+              "font-sans theme-default"
+            )}
+          >
+            {children}
+          </body>
+        </ThemeProvider>
       </LanguageProvider>
     </html>
   );

@@ -24,10 +24,11 @@ export const LocaleSelection = () => {
         <div
           className={cn(
             buttonVariants({ variant: "outline" }),
-            "relative w-full h-full p-0 z-10 group-hover:bg-transparent backdrop-blur-sm cursor-pointer"
+            "relative w-full h-full p-0 z-10 group-hover:bg-transparent backdrop-blur-sm cursor-pointer bg-primary/5"
           )}
         >
           {locale}
+          <div className="absolute inset-0 size-full rounded-md bg-primary/5 p-0 transition-all duration-300 group-hover:origin-bottom group-hover:rotate-45" />
         </div>
       </PopoverTrigger>
       <PopoverContent className="w-12 p-0">

@@ -59,7 +59,7 @@ export const Hero = () => {
           </p>
         </button>
       </div>
-      <div className="ml-auto flex-1 max-md:m-auto">
+      <div id="me-avatar" className="ml-auto flex-1 max-md:m-auto">
         <img
           src={"/me_avatar.png"}
           alt="my picture"

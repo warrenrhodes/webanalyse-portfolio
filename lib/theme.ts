@@ -14,7 +14,7 @@ export interface ThemeContextType {
 
 export const themes: Theme[] = [
   {
-    name: "tw-default",
+    name: "theme-default",
     colors: {
       primary: "229 100% 62%",
       secondary: "229 14% 8%;",
@@ -22,7 +22,7 @@ export const themes: Theme[] = [
     },
   },
   {
-    name: "tw-orange",
+    name: "theme-orange",
     colors: {
       primary: "20.5 90.2% 48.2%",
       secondary: "12 6.5% 15.1%",
@@ -30,7 +30,7 @@ export const themes: Theme[] = [
     },
   },
   {
-    name: "tw-rose",
+    name: "theme-rose",
     colors: {
       primary: "346.8 77.2% 49.8%",
       secondary: "240 3.7% 15.9%",
@@ -38,7 +38,7 @@ export const themes: Theme[] = [
     },
   },
   {
-    name: "tw-light-blue",
+    name: "theme-light-blue",
     colors: {
       primary: "229 100% 62%",
       secondary: "229 20% 90%",
@@ -46,7 +46,7 @@ export const themes: Theme[] = [
     },
   },
   {
-    name: "tw-light-orange",
+    name: "theme-light-orange",
     colors: {
       primary: "24.6 95% 53.1%",
       secondary: "60 4.8% 95.9%",
@@ -54,7 +54,7 @@ export const themes: Theme[] = [
     },
   },
   {
-    name: "tw-light-rose",
+    name: "theme-light-rose",
     colors: {
       primary: "346.8 77.2% 49.8%",
       secondary: "240 4.8% 95.9%",

@@ -150,11 +150,11 @@ const ProjectsCard = ({ project }: { project: Project[] }) => {
   return (
     <div className="m-auto space-y-3 p-3">
       <p className="text-sm text-muted-foreground">{localization.funProject}</p>
-      <div className="group flex flex-col items-start">
+      <div className="group flex flex-col items-stretch">
         {project.map((item) => (
           <Link
             href={item.link ?? "/"}
-            className="m-2 inline-flex w-full items-center gap-3 p-2 transition duration-300 hover:!scale-100 hover:rounded-md
+            className="inline-flex min-h-0 w-full flex-1 items-center gap-3 p-3 transition duration-300 hover:!scale-100 hover:rounded-md
             hover:bg-primary/10 hover:!blur-none  group-hover:scale-95 group-hover:blur-[1px]"
             key={item.title}
           >

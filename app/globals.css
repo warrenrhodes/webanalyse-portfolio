@@ -26,7 +26,7 @@
     --radius: 0.5rem;
   }
 
-  .tw-orange {
+  .theme-orange {
     --background: 20 14.3% 4.1%;
     --foreground: 60 9.1% 97.8%;
     --muted: 12 6.5% 15.1%;
@@ -49,7 +49,7 @@
     --radius: 0.5rem;
   }
 
-  .tw-rose {
+  .theme-rose {
     --background: 20 14.3% 4.1%;
     --foreground: 0 0% 95%;
     --muted: 0 0% 15%;
@@ -72,7 +72,7 @@
     --radius: 0.5rem;
   }
 
-  .tw-light-blue {
+  .theme-light-blue {
     --background: 229 57% 100%;
     --foreground: 229 63% 4%;
     --muted: 229 12% 86%;
@@ -95,7 +95,7 @@
     --radius: 0.5rem;
   }
 
-  .tw-light-rose {
+  .theme-light-rose {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
     --muted: 240 4.8% 95.9%;
@@ -117,7 +117,7 @@
     --ring: 346.8 77.2% 49.8%;
     --radius: 0.5rem;
   }
-  .tw-light-orange {
+  .theme-light-orange {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
     --muted: 60 4.8% 95.9%;
