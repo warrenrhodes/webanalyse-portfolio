@@ -31,8 +31,8 @@ export const dictionary: Record<DictWords, Record<Locale, string>> = {
     fr: "Je Reside au",
   },
   download: {
-    en: "View Resume",
-    fr: "Voir CV",
+    en: "Download",
+    fr: "Télécharger",
   },
   resume: {
     en: "Resume",
@@ -45,10 +45,6 @@ export const dictionary: Record<DictWords, Record<Locale, string>> = {
   betterLifeDescription: {
     en: "Application that allows users to create and manage event.",
     fr: "Application qui permet aux utilisateurs de creer et gerer des evenements.",
-  },
-  naturegiftdescription: {
-    en: "Public complete e-commerce website with administration dashboard.",
-    fr: "Site e-commerce complet avec dashboard d'administration.",
   },
   saleRentalVehiclesDescription: {
     en: " Application for the sale and rental of vehicles and spare parts",
@@ -144,7 +140,6 @@ export const enum DictWords {
   advancedDartUtilDescription = "advancedDartUtilDescription",
   seeMore = "seeMore",
   flutterAndReactDeveloper = "flutterAndReactDeveloper",
-  naturegiftdescription = "naturegiftdescription",
   funProject = "funProject",
   works = "works",
   contact = "contact",

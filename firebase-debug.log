@@ -1,0 +1,21 @@
+[debug] [2025-01-07T10:30:29.642Z] ----------------------------------------------------------------------
+[debug] [2025-01-07T10:30:29.645Z] Command:       /Users/warrenrhodes/.volta/tools/image/node/20.10.0/bin/node /Users/warrenrhodes/.volta/tools/image/packages/firebase-tools/bin/firebase deploy --only hosting --project webanalyse-portfolio
+[debug] [2025-01-07T10:30:29.645Z] CLI Version:   13.28.0
+[debug] [2025-01-07T10:30:29.645Z] Platform:      darwin
+[debug] [2025-01-07T10:30:29.646Z] Node Version:  v20.10.0
+[debug] [2025-01-07T10:30:29.646Z] Time:          Tue Jan 07 2025 11:30:29 GMT+0100 (West Africa Standard Time)
+[debug] [2025-01-07T10:30:29.646Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-07T10:30:29.716Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-07T10:30:29.716Z] > authorizing via signed-in user (webanalyse237@gmail.com)
+[debug] [2025-01-07T10:30:29.716Z] [iam] checking project webanalyse-portfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-07T10:30:29.717Z] Checked if tokens are valid: true, expires at: 1736247046350
+[debug] [2025-01-07T10:30:29.717Z] Checked if tokens are valid: true, expires at: 1736247046350
+[debug] [2025-01-07T10:30:29.718Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webanalyse-portfolio:testIamPermissions [none]
+[debug] [2025-01-07T10:30:29.718Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webanalyse-portfolio:testIamPermissions x-goog-quota-user=projects/webanalyse-portfolio
+[debug] [2025-01-07T10:30:29.719Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webanalyse-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-07T10:30:30.997Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webanalyse-portfolio:testIamPermissions 200
+[debug] [2025-01-07T10:30:30.998Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webanalyse-portfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-07T10:30:30.998Z] Checked if tokens are valid: true, expires at: 1736247046350
+[debug] [2025-01-07T10:30:30.999Z] Checked if tokens are valid: true, expires at: 1736247046350
+[debug] [2025-01-07T10:30:30.999Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webanalyse-portfolio [none]

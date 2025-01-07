@@ -54,15 +54,8 @@ const groupAndPersonalsProject: Project[] = [
   {
     title: "Nature's Gift store",
     description: DictWords.naturegiftdescription,
-    link: "https://betterlife-future.com",
+    link: "https://play.google.com/store/apps/details?id=com.karibu.betterlifeevent.prod&pli=1",
     image: Check,
-    role: "Owner",
-  },
-  {
-    title: "Advanced Dart util",
-    description: DictWords.advancedDartUtilDescription,
-    link: "https://dart-advanced-util.vercel.app",
-    image: Wrench,
     role: "Owner",
   },
   {
@@ -86,12 +79,19 @@ const groupAndPersonalsProject: Project[] = [
     image: Wallet,
     role: "Collaborator",
   },
+  {
+    title: "Advanced Dart util",
+    description: DictWords.advancedDartUtilDescription,
+    link: "https://dart-advanced-util.vercel.app",
+    image: Wrench,
+    role: "Owner",
+  },
 ];
 
 export const BodySection = () => {
   const { localization } = useLocalization();
   return (
-    <Section className=" flex h-full gap-3 py-0 max-md:flex-col">
+    <Section className="isolate flex h-full gap-3 py-0 max-md:flex-col">
       <div
         className="fixed inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"

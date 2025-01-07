@@ -31,8 +31,8 @@ export const dictionary: Record<DictWords, Record<Locale, string>> = {
     fr: "Je Reside au",
   },
   download: {
-    en: "View Resume",
-    fr: "Voir CV",
+    en: "Download",
+    fr: "Télécharger",
   },
   resume: {
     en: "Resume",

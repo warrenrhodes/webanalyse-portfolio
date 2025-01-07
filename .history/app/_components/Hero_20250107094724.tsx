@@ -1,22 +1,23 @@
 "use client";
 
 import { useLocalization } from "@/lib/hooks/useLocalization";
-import { LinkIcon } from "lucide-react";
+import { Download } from "lucide-react";
 import Link from "next/link";
 import { Code } from "./Code";
 import { Section } from "./Section";
-import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   const { localization } = useLocalization();
   const downloadResume = () => {
-    window.open(
-      "https://docs.google.com/document/d/1HsAWJGKIf_u2XM7OkTQxNwGZHiRhCkZE73TMu3SwTJg/edit?usp=sharing",
-      "_blank"
-    );
+    const link = document.createElement("a");
+    link.href = "/cv_Lekane_Warren.pdf";
+    link.download = "cv_Lekane_Warren";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
   return (
-    <Section className="flex items-start gap-3 py-0 max-md:flex-col inset-10 z-10 transform-cpu">
+    <Section className="flex items-start gap-3 py-0 max-md:flex-col">
       <div className="flex flex-[2] flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary">Warren Rhodes</h2>
         <h3 className="font-caption text-3xl">Software Developer</h3>
@@ -42,15 +43,18 @@ export const Hero = () => {
             Cameroun
           </Code>
         </span>
-        <Button
+        <button
           type="button"
-          className="flex items-center gap-2 p-4 w-60 rounded-2xl bg-primary/15 text-center font-sans text-xl font-semibold ring-1 hover:bg-primary/30"
+          className="group relative h-14 w-48 rounded-2xl bg-primary/15 text-center font-sans text-xl font-semibold ring-1"
           onClick={downloadResume}
         >
-          <LinkIcon />
-
-          <p className="text-primary">{localization.download}</p>
-        </Button>
+          <div className=" left-1 top-[4px] z-10 flex h-12 w-1/4 items-center justify-center gap-3 overflow-hidden rounded-xl  bg-primary/25 text-primary duration-500 group-hover:w-[184px]">
+            <p className=" text-primary transition-all">
+              {localization.download}
+            </p>
+            <Download />
+          </div>
+        </button>
       </div>
       <div id="me-avatar" className="ml-auto flex-1 max-md:m-auto">
         <img

@@ -16,7 +16,7 @@ export const Hero = () => {
     );
   };
   return (
-    <Section className="flex items-start gap-3 py-0 max-md:flex-col inset-10 z-10 transform-cpu">
+    <Section className="flex items-start gap-3 py-0 max-md:flex-col inset-x-0 z-10 transform-gpu">
       <div className="flex flex-[2] flex-col gap-2">
         <h2 className="font-caption text-5xl text-primary">Warren Rhodes</h2>
         <h3 className="font-caption text-3xl">Software Developer</h3>
@@ -44,7 +44,7 @@ export const Hero = () => {
         </span>
         <Button
           type="button"
-          className="flex items-center gap-2 p-4 w-60 rounded-2xl bg-primary/15 text-center font-sans text-xl font-semibold ring-1 hover:bg-primary/30"
+          className="relative flex items-center gap-2 p-4 w-auto rounded-2xl bg-primary/15 text-center font-sans text-xl font-semibold ring-1 hover:bg-primary/30"
           onClick={downloadResume}
         >
           <LinkIcon />

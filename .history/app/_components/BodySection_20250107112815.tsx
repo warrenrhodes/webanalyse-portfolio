@@ -91,7 +91,7 @@ const groupAndPersonalsProject: Project[] = [
 export const BodySection = () => {
   const { localization } = useLocalization();
   return (
-    <Section className=" flex h-full gap-3 py-0 max-md:flex-col">
+    <Section className="isolate flex h-full gap-3 py-0 max-md:flex-col">
       <div
         className="fixed inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"

@@ -4,7 +4,6 @@ import { ContactCart } from "./_ContactCart";
 import { GmailIcon } from "./icons/GmailIcon";
 import { LinkInIcon } from "./icons/LinkInIcon";
 import { Section } from "./Section";
-import { WhatsAppIcon } from "./icons/Whatsapp";
 
 export const Contact = () => {
   const { localization } = useLocalization();
@@ -29,10 +28,10 @@ export const Contact = () => {
           title="webanalyse237@gmail.com"
         />{" "}
         <ContactCart
-          icon={<WhatsAppIcon color="#0A66C2" />}
-          description="WhatsApp"
-          link={"https://wa.me/237696689073"}
-          title="+237 696-689-073"
+          icon={<GmailIcon color="#0A66C2" />}
+          description="Gmail"
+          link={"mailto:webanalyse237@gmail.com"}
+          title="webanalyse237@gmail.com"
         />
       </div>
     </Section>
